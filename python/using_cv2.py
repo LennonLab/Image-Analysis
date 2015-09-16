@@ -18,8 +18,8 @@ detector = cv2.SimpleBlobDetector()
 params = cv2.SimpleBlobDetector_Params()
 
 # Change thresholds
-params.minThreshold = 10
-params.maxThreshold = 200
+params.minThreshold = 1
+params.maxThreshold = 20000
 
 # Filter by Area.
 params.filterByArea = True
@@ -29,7 +29,7 @@ params.minArea = 100
 params.filterByCircularity = True
 params.minCircularity = 0.1
 
-params.filterByColor = True
+params.filterByColor = False
 params.blobColor = 255
 
 # Filter by Convexity
@@ -37,7 +37,7 @@ params.filterByConvexity = True
 params.minConvexity = 0.87
 
 # Filter by Inertia
-params.filterByInertia = True
+params.filterByInertia = False
 params.minInertiaRatio = 0.01
 
 
@@ -54,5 +54,5 @@ keypoints = detector.detect(image)
 im_kp = cv2.drawKeypoints(image, keypoints, np.array([]), (0,0,255), cv2.DRAW_MATCHES_FLAGS_DRAW_RICH_KEYPOINTS)
 
 # Show keypoints
-im_kp_small = cv2.resize(im_kp, (0,0), fx=0.2, fy=0.2)
-cv2.imwrite(mydir + '/results/photos/test.png',im_kp_small)
+im_kp_small = cv2.resize(im_kp, (0,0), fx=0.99, fy=0.99)
+cv2.imwrite(mydir + '/results/photos/using_cv2.png',im_kp_small)
