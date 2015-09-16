@@ -47,4 +47,7 @@ for blobs, color, title in sequence:
         c = plt.Circle((x, y), r, color=color, linewidth=2, fill=False)
         ax.add_patch(c)
 
-plt.show()
+    #plt.imshow(img, cmap=plt.cm.gray)
+    plt.savefig(mydir + '/results/photos/using_scikit_image'+title+'.png')
+
+    #plt.show()
