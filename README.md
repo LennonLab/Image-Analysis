@@ -3,6 +3,17 @@ A repository of code to analyze images of microbial colonies growing on petri di
 
 ##Authors 
 Ken Locey, Ph.D.
+William R. Shoemaker
+
+## Files & Folders
+
+**morphotype_project**: 
+
+**python**: A directory containing python scripts for analyzing images with various tools (scikit, machine learning, PIL library).
+
+**photos**: Contains one test photo (test.png) of a petri dish culture, for use in developing image analysis code.
+
+**results**: A directory containing results of image analysis from testing. This directory is not project specific.
 
 ##Useful links:
 https://scipy-lectures.github.io/advanced/image_processing/
