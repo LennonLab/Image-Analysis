@@ -2,7 +2,7 @@
 A repository of code to analyze images of microbial colonies growing on petri dishes.
 
 ##Authors 
-Ken Locey, Ph.D.
+Ken Locey, Ph.D.  
 William R. Shoemaker
 
 ## Files & Folders
@@ -35,9 +35,6 @@ http://docs.opencv.org/3.0-beta/doc/py_tutorials/py_gui/py_image_display/py_imag
 http://www.shervinemami.info/openCV.html
 
 http://scikit-image.org/docs/dev/auto_examples/plot_blob.html
-
-
-##Contents
 
 
 
